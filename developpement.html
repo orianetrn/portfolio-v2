@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oriane Tourneroche | Développement web</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!--
+    <header>
+        <div>
+            <a href="accueil.html"><img id="logo" src="img/logo.png" alt="ordinateur avec plusieurs pages ouvertes"></a>
+        </div>
+        <div id="nav-bar">
+            <div class="onglet-nav">
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+            <div class="onglet-nav">
+                <a href="a_propos.html">À propos</a>
+            </div>
+            <div class="onglet-nav">
+                <a href="#">Télécharger mon CV</a>
+            </div>
+        </div>
+    </header>
+    -->
+
+    <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="img/logo.png" />
+            </a>
+        </div>
+        <nav class="header__nav">
+            <div class="header__nav__close" onclick="closeMenuMobile()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <ul class="header__nav__menu">
+                <li class="header__nav__menu__link">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="a_propos.html">À Propos</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="img/cv.pdf" target="_blank">Télécharger mon CV</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="header__burger" onclick="openMenuMobile()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+    </header>
+
+    <div class="nav-portfolio">
+        <div class="onglet-nav-portfolio barre-onglet barre-onglet-hover">
+            <a href="developpement.html">Développement web</a>
+        </div>
+        <div class="onglet-nav-portfolio barre-onglet-hover">
+            <a href="graphisme.html">Graphisme</a>
+        </div>
+        <div class="onglet-nav-portfolio barre-onglet-hover">
+            <a href="video.html">Vidéo</a>
+        </div>
+    </div>
+
+    <div class="projet-dev bg-ombre mt-30">
+        <h2 class="m-0">Podcast</h2>
+        <h3 class="m-0 font-regular">2023</h3>
+        <h3 class="m-0 font-regular">Laravel, HTML, CSS </h3>
+
+        <div class="blocs">
+            <div class="bloc3">
+                <iframe src="https://www.youtube.com/embed/jRHHAwuCwO8" frameborder="0" width="400px" height="250px"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="bloc3">
+                <img src="img/podcast1.png" alt="article fr">
+            </div>
+            <div class="bloc3">
+                <img src="img/podcast2.png" alt="page accueil">
+                <img src="img/podcast3.png" alt="page accueil">
+            </div>
+        </div>
+
+        <p>Réalisation d'une platforme pour héberger les podcasts réaliser par les étudiants en spécialité création
+            numérique et marketing de My Digital School. Une partie du site est accessible au public : les podcast
+            peuvent être consulté et écouté. Une seconde partie est accessible uniquement par connection. Cette partie
+            permet d'ajouter des podcast,mais auss d'éditer et supprimer ses podcastS. Pour se connecter les étudiants
+            doivent obligatoirement passer par microsoft. Si une personne externe à l'école essaye de se connecter
+            l'accès lui sera refuser.</p>
+
+        <a class="style-bouton" href="https://kumquat-studio.itch.io/charlis-eco-adventure" target="_blank">Voir sur
+            github</a>
+
+    </div>
+
+    <div class="projet-dev bg-ombre mt-150">
+        <h2 class="m-0">Charli's Eco Adventure</h2>
+        <h3 class="m-0 font-regular">2023</h3>
+        <h3 class="m-0 font-regular">stencyl (outil no code) </h3>
+
+        <div class="blocs">
+            <div class="bloc3">
+                <iframe width="400px" height="250px" src="https://www.youtube.com/embed/4OccDE05cDo"
+                    title="Charli&#39;s Eco Adventure Trailer" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="bloc3">
+                <img src="img/charli-accueil.png" alt="article fr">
+            </div>
+            <div class="bloc3">
+                <img src="img/charli-level3.png" alt="page accueil">
+            </div>
+        </div>
+
+        <p>Participation à la Game Jam 2023 de My Digital School. Au sein d'une équipe de six personnes, j'ai pu prendre
+            en charge la partie développement avec une camarade. Charli's Eco Adventure a été sélectionné pour
+            représenter l'école de Lyon au niveau national.</p>
+
+        <a class="style-bouton" href="https://kumquat-studio.itch.io/charlis-eco-adventure" target="_blank">Jouer au jeu
+            !</a>
+
+        <p>* le jeu peut être jouer uniquement sur pc</p>
+
+    </div>
+
+    <div class="projet-dev bg-ombre mt-150">
+        <h2 class="m-0">Les carnets d'Oriane</h2>
+        <h3 class="m-0 font-regular">2022</h3>
+        <h3 class="m-0 font-regular">HTML, CSS, JavaScript, PHP </h3>
+
+        <div class="blocs">
+            <div class="bloc3">
+                <iframe width="400px" height="250px" src="https://www.youtube.com/embed/82BUKSWU7oE"
+                    title="video berlin" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="bloc3">
+                <img src="img/berlin-article-fr.png" alt="article fr">
+                <img src="img/berlin-article-en.png" alt="article en">
+            </div>
+            <div class="bloc3">
+                <img src="img/berlin-accueil.png" alt="page accueil">
+            </div>
+        </div>
+
+        <p>Lors de mes partiels, j’ai dû travailler sur la création d’un blog de voyage. Le blog est disponible en
+            anglais et en français. On retrouve un onglet blog ainsi qu'un onglet contact. La page contact dispose d'un
+            formulaire relié à une base de données où toutes les informations récoltées sont stockées. Une maquette a
+            été réalisée sur adobe xd puis intégrée.</p>
+
+        <a class="style-bouton" href="https://github.com/orianetrn/blog.voyage" target="_blank">Voir sur github</a>
+    </div>
+
+    <div class="projet-dev bg-ombre mt-150">
+        <h2 class="m-0">Reproduction de CityCrunch</h2>
+        <h3 class="m-0 font-regular">2022</h3>
+        <h3 class="m-0 font-regular">HTML, SASS, CSS</h3>
+
+        <div class="blocs">
+            <div class="bloc2">
+                <iframe width="600px" height="350px" src="https://www.youtube.com/embed/IxyIsyZM0WA" title="CityCrunch"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="bloc2 container-citycrunch">
+                <div>
+                    <img src="img/CityCrunch-accueil.png" alt="page d'accueil">
+                </div>
+                <div>
+                    <img src="img/CityCrunch-activite.png" alt="page activité">
+                </div>
+            </div>
+        </div>
+        <p>Devoir réalisé à la fin du module intégration web. La consigne était de reproduire la page d’accueil et la
+            page activités du site CityCrunch avec un temps imparti de 7h. Travail sur le responsive et l’utilisation de
+            SASS. </p>
+        <a class="style-bouton" href="https://github.com/orianetrn/CityCrunch" target="_blank">Voir sur github</a>
+    </div>
+
+    <div class="projet-dev bg-ombre mt-150" id="landing-page-mdf">
+        <h2 class="m-0">Landing Page My Digital Food</h2>
+        <h3 class="m-0 font-regular">2022</h3>
+        <h3 class="m-0 font-regular">HTML, CSS </h3>
+
+        <div class="blocs">
+            <div class="bloc2">
+                <iframe width="600px" height="350px" src="https://www.youtube.com/embed/uw5EriyfOVc"
+                    title="My Digital Food" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div>
+                <img src="img/MDF-accueil.png" alt="page accueil">
+            </div>
+        </div>
+        <p>My Digital Food est un site internet regroupant des avis d’étudiants sur différents restaurants et
+            établissant un classement des meilleurs endroits pour manger. Pour le lancement de ce site internet, une
+            landing page a
+            été lancée afin de récolter les premiers avis et donc partager un premier classement.</p>
+        <a class="style-bouton" href="https://github.com/orianetrn/landing-page-MyDigitalFood" target="_blank">voir sur
+            github</a>
+    </div>
+
+    <div class="projet-dev bg-ombre mt-150">
+        <h2 class="m-0">Site Portfolio</h2>
+        <h3 class="m-0 font-regular">2022</h3>
+        <h3 class="m-0 font-regular">HTML, CSS, JavaScript</h3>
+
+        <div class="blocs">
+            <div class="bloc2">
+                <iframe width="600px" height="350px" src="https://www.youtube.com/embed/nqvWY_VhqjA" title="Portfolio"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div>
+                <img src="img/Portfolio-portfolio.png" alt="page accueil">
+            </div>
+        </div>
+        <p>Première version de mon portfolio web. </p>
+        <a class="style-bouton" href="https://github.com/orianetrn/portfolio" target="_blank">Voir sur github</a>
+    </div>
+
+    <div class="container-bandeau">
+        <div id="bandeau">
+            <img class="logo mr-5" src="img/at.png" alt="mail">
+            <p class="mr-20">oriane.tourneroche@gmail.com</p>
+
+            <img class="logo mr-5" src="img/github.png" alt="github">
+            <p class="mr-20">orianetrn</p>
+
+            <img class="logo mr-5" src="img/linkedin.png" alt="linkedin">
+            <p class="mr-20">Oriane Tourneroche</p>
+
+            <img class="logo mr-5" src="img/instagram.png" alt="instagram">
+            <p class="mr-20">designoriane</p>
+
+            <div class="bandeau-cacher">
+                <img class="logo mr-5" src="img/at.png" alt="mail">
+                <p class="mr-20">oriane.tourneroche@gmail.com</p>
+
+                <img class="logo mr-5" src="img/github.png" alt="github">
+                <p class="mr-20">orianetrn</p>
+
+                <img class="logo mr-5" src="img/linkedin.png" alt="linkedin">
+                <p class="mr-20">Oriane Tourneroche</p>
+
+                <img class="logo mr-5" src="img/instagram.png" alt="instagram">
+                <p>designoriane</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2 class="title-center">Oriane Tourneroche © 2022</h2>
+    </footer>
+
+    <script src="menu-burger.js"></script>
+</body>
+
+</html>

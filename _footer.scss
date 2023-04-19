@@ -1,0 +1,13 @@
+footer {
+    margin-top: 25px;
+    padding: 25px;
+    border-top: solid black;
+
+    h2 {
+        font-weight: $font-primary-light;
+    }
+
+    @include mobile-only {
+        margin-top: 90px;
+    }
+}

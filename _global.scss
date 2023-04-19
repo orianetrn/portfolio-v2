@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    background-color: $blue;
+    font-family: $font-primary;
+    font-weight: $font-primary-light;
+
+    ::selection {
+        color: $white;
+        background: rgb(248, 75, 104);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+img {
+    max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
+
+/* POO */
+.title-center {
+    text-align: center;
+}
+
+.title-size {
+    font-size: 40px;
+}
+
+.font-regular {
+    font-weight: $font-primary-light;
+}
+
+.font-size-25 {
+    font-size: 25px;
+
+    @include mobile-only {
+        font-size: 15px;
+    }
+}
+
+p {
+    @include mobile-only {
+        font-size: 15px;
+    }
+}
+
+.title-margin {
+    margin-top: 70px;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mt-150 {
+    margin-top: 150px;
+
+    @include mobile-only {
+        margin-top: 70px;
+    }
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 75px;
+}
+
+.mr-5 {
+    margin-right: 5px
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.ml-25 {
+    margin-left: 25px;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bg-ombre {
+    background-image: url(img/ombre.png);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* bouton */
+.bouton {
+    width: 200px;
+    display: inline-block;
+}
+
+.box-bouton {
+    text-align: right;
+}
+
+.style-bouton {
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 2rem;
+    border: solid $black 0.5px;
+    font-family: $font-primary;
+}
+
+/* Div flex */
+.blocs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloc3 {
+    width: calc((100% / 3) - 50px);
+    margin: 25px;
+    text-align: center;
+
+    @include mobile-only {
+        width: 100%;
+    }
+}
+
+.bloc2 {
+    width: calc((100% / 2) - 50px);
+    margin: 25px;
+
+    @include mobile-only {
+        width: 100%;
+    }
+}
+
+/* Navigation portfolio*/
+
+.nav-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.onglet-nav-portfolio {
+    margin: 20px;
+    
+    a {
+        color: $black;
+        text-decoration: none;
+
+        @include mobile-only {
+            font-size: 10px;
+        }
+    }
+}
+
+.barre-onglet {
+    display: inline-block;
+    border-bottom: solid $black 1px;
+}
+
+.barre-onglet-hover:hover {
+    display: inline-block;
+    border-bottom: solid $black 1px;
+}
+
+/* Réseau sociaux */
+
+.container-bandeau {
+    @include mobile-only {
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        position: absolute;
+        margin-top: 20px;
+        transform: translateY(-50%);
+    }
+}
+
+#bandeau {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    .logo {
+        height: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    a {
+        align-items: center;
+    }
+
+    @include mobile-only {
+        white-space: nowrap;
+        animation: scrollTxt 15s linear infinite;
+        p {
+            font-size: 10px;
+        }
+    }
+}
+  
+@keyframes scrollTxt {
+    0%{
+        transform: translate(3%, 0);
+    }
+    100% {
+        transform: translate(-52%, 0);
+    }
+}
+
+.bandeau-cacher {
+    display: none;
+    @include mobile-only {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/*
+.container-bandeau {
+    @include mobile-only {
+        width: 150%;
+        position: absolute; 
+    }
+}
+
+#bandeau {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    .logo {
+        height: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    @include mobile-only {
+        position: absolute;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: animate 20s linear infinite; 
+    }
+}
+
+@keyframes animate {
+    0% {
+      transform: translate(50%, 0%);      
+    }
+    100% {
+      transform: translate(-25%, 0%);
+    }
+} */

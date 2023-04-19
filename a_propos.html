@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oriane Tourneroche | À Propos</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!--
+    <header>
+        <div>
+            <a href="accueil.html"><img id="logo" src="img/logo.png" alt="ordinateur avec plusieurs pages ouvertes"></a>
+        </div>
+        <div id="nav-bar">
+            <div class="onglet-nav barre-onglet-hover">
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+            <div class="onglet-nav barre-onglet">
+                <a href="a_propos.html">À propos</a>
+            </div>
+            <div class="onglet-nav barre-onglet-hover">
+                <a href="#">Télécharger mon CV</a>
+            </div>
+        </div>
+    </header>
+    -->
+
+    <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="img/logo.png"/>
+            </a>
+        </div>
+        <nav class="header__nav">
+            <div class="header__nav__close" onclick="closeMenuMobile()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <ul class="header__nav__menu">
+                <li class="header__nav__menu__link">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="a_propos.html">À Propos</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="img/cv.pdf" target="_blank">Télécharger mon CV</a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div class="header__burger" onclick="openMenuMobile()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <h2 class="title-size mt-50">Ça c’est moi</h2>
+
+        <div class="blocs">
+            <div class="bloc3 bg-ombre">
+                <p class="font-size-25">Je me présente, je m’appelle Oriane Tourneroche et j’ai 20 ans. Je viens de la
+                    région parisienne mais
+                    je
+                    fais actuellement mes études dans la magnifique ville de Lyon.
+                </p>
+            </div>
+            <div class="bloc3">
+                <img src="img/photo.png" alt="photo">
+            </div>
+            <div class="bloc3 bg-ombre">
+                <p class="font-size-25">J’ai découvert le développement web lors de ma première année à My Digital
+                    School, et depuis mon seul
+                    objectif est de devenir développeuse front-end.
+                </p>
+            </div>
+        </div>
+
+        <!--
+        <p>J’ai toujours dis que je ne ferais pas le même métier que mon papa (informaticien) mais je dois bien avouer
+            qu’on
+            s’en rapproche de plus en plus mais c’est pas grave ça me plait bien :)
+        </p>
+        -->
+
+        <h2 class="title-size mt-50">Mon parcours</h2>
+        <p>
+            . Septembre 2021 - Aujourd’hui : Bachelor cycle web et multimédia à My Digital School Lyon <br>
+            . Septembre 2020 - Mars 2021 : Bachelor assistant ingénieur en biologie, biochimie à l’ESTBB Lyon <br>
+            . Septembre 2019 - Juillet 2020 : Terminale S, bac mention assez bien
+        </p>
+
+        <h2 class="title-size mt-50">Je recherche</h2>
+        <p> - un stage débutant en mai 2023 dans le secteur du développement web <br>
+            - une alternance débutant en septembre 2023 dans le secteur du développement web également
+        </p>
+
+    </div>
+
+    <div class="container">
+        <h2 class="title-margin title-size">Contactez moi</h2>
+
+        <form id="formulaire" method="post" action="contact-mail.php">
+            <div class="blocs">
+                <div class="bloc3">
+                    <div class="form">
+                        Nom <br>
+                        <input type='text' class="form-input" name="nom" required>
+                    </div>
+                    <div class="form">
+                        Entreprise <br>
+                        <input type='text' class="form-input" name="entreprise">
+                    </div>
+                </div>
+
+                <div class="bloc3">
+                    <div class="form-img">
+                        <img src="img/avion.png" alt="avion">
+                    </div>
+                </div>
+
+                <div class="bloc3">
+                    <div class="form">
+                        Email <br>
+                        <input type='email' class="form-input" name="email" required>
+                    </div>
+                    <div class="form">
+                        Numéro <br>
+                        <input type='text' class="form-input" name="numero" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form">
+                Message <br>
+                <textarea name="message" id="form-message" rows="5"></textarea>
+                <div class="box-bouton">
+                    <div class="bouton">
+                        <input type='submit' class="style-bouton" value='Envoyer'>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <h3 class="title-center title-margin">Réponse rapide</h3>
+
+    </div>
+
+
+    <div class="container-bandeau">
+        <div id="bandeau">
+            <img class="logo mr-5" src="img/at.png" alt="mail">
+            <p class="mr-20">oriane.tourneroche@gmail.com</p>
+
+            <img class="logo mr-5" src="img/github.png" alt="github">
+            <p class="mr-20">orianetrn</p>
+
+            <img class="logo mr-5" src="img/linkedin.png" alt="linkedin">
+            <p class="mr-20">Oriane Tourneroche</p>
+
+            <img class="logo mr-5" src="img/instagram.png" alt="instagram">
+            <p class="mr-20">designoriane</p>
+
+            <div class="bandeau-cacher">
+                <img class="logo mr-5" src="img/at.png" alt="mail">
+                <p class="mr-20">oriane.tourneroche@gmail.com</p>
+
+                <img class="logo mr-5" src="img/github.png" alt="github">
+                <p class="mr-20">orianetrn</p>
+
+                <img class="logo mr-5" src="img/linkedin.png" alt="linkedin">
+                <p class="mr-20">Oriane Tourneroche</p>
+
+                <img class="logo mr-5" src="img/instagram.png" alt="instagram">
+                <p>designoriane</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2 class="title-center">Oriane Tourneroche © 2022</h2>
+    </footer>
+
+    <script src="menu-burger.js"></script>
+</body>
+
+</html>

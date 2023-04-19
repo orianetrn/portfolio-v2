@@ -1,0 +1,28 @@
+.padding-ombre {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include mobile-only {
+        padding-top: 0px;
+    }
+}
+
+.video-portrait {
+    width: 25%;
+
+    @include mobile-only {
+        width: 50%;
+    }
+}
+
+.blocs-video2 :nth-child(1) { 
+    @include mobile-only {
+        order: 2; 
+    }
+}
+
+.responsive-video {
+    @include mobile-only {
+        margin: 0px;
+    }
+}

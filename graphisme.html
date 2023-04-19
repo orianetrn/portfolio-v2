@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oriane Tourneroche | Graphisme</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!--
+    <header>
+        <div>
+            <a href="accueil.html"><img id="logo" src="img/logo.png" alt="logo"></a>
+        </div>
+        <div id="nav-bar">
+            <div class="onglet-nav">
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+            <div class="onglet-nav">
+                <a href="a_propos.html">À propos</a>
+            </div>
+            <div class="onglet-nav">
+                <a href="#">Télécharger mon CV</a>
+            </div>
+        </div>
+    </header>
+    -->
+
+    <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="img/logo.png" />
+            </a>
+        </div>
+        <nav class="header__nav">
+            <div class="header__nav__close" onclick="closeMenuMobile()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <ul class="header__nav__menu">
+                <li class="header__nav__menu__link">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="a_propos.html">À Propos</a>
+                </li>
+                <li class="header__nav__menu__link">
+                    <a href="img/cv.pdf" target="_blank">Télécharger mon CV</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="header__burger" onclick="openMenuMobile()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+    </header>
+
+    <div class="nav-portfolio">
+        <div class="onglet-nav-portfolio barre-onglet-hover">
+            <a href="developpement.html">Développement web</a>
+        </div>
+        <div class="onglet-nav-portfolio barre-onglet barre-onglet-hover">
+            <a href="graphisme.html">Graphisme</a>
+        </div>
+        <div class="onglet-nav-portfolio barre-onglet-hover">
+            <a href="video.html">Vidéo</a>
+        </div>
+    </div>
+
+    <div class="container-projet">
+        <h2 class="mt-30">Mairie de Dardilly</h2>
+        <h3 class="m-0 font-regular">2022</h3>
+
+        <div class="blocs bg-ombre">
+            <div class="bloc3">
+                <img src="img/affiche-1.png" alt="affiche">
+            </div>
+            <div class="bloc3">
+                <img src="img/affiche-2.png" alt="affiche">
+            </div>
+            <div class="bloc3">
+                <img src="img/affiche-3.png" alt="affiche">
+            </div>
+        </div>
+        <p>Durant ma période de stage, j'ai travaillée sur différentes version d'affiches afin de souhaiter un bel été
+            aux habitants de Dardilly. Les trois affiches ci-dessus ont été présentées au service communication. La
+            première à été retenue et affichée dans la ville durant les vacances d'été 2022.</p>
+
+        <div class="mt-150">
+            <div class="blocs bg-ombre">
+                <div class="bloc2">
+                    <img src="img/panneau-1.png" alt="panneau">
+                </div>
+                <div class="bloc2">
+                    <img src="img/panneau-2.png" alt="panneau">
+                </div>
+            </div>
+            <p>Lors de ce même stage, j'ai pu réaliser des panneaux pour sensibiliser aux déjections canines et aux
+                mégots de cigarette. Ces panneaux ont été réalisés en collaboration avec les espaces verts. Ils ont été
+                planter un peu partout dans la ville. Vous pouvez toujours les retrouver si vous êtes de passage en
+                ville.</p>
+
+            <a id="afficher" class="bouton style-bouton">Voir les panneaux affichés</a>
+            <div class="mt-50" id="div_cacher_arbre">
+                <img src="img/panneau-installe-1.png" alt="panneau">
+                <img src="img/panneau-installe-2.png" alt="panneau">
+            </div>
+
+
+        </div>
+
+        <div class="mt-150 bg-ombre">
+            <div class="blocs">
+                <div class="bloc2">
+                    <img src="img/panneau-3.png" alt="panneau">
+                </div>
+                <div class="ml-25">
+                    <img src="img/panneau-installe-4.png" alt="panneau">
+                </div>
+            </div>
+            <p>Pour faire découvrir les noms des arbres aux habitants de Dardilly, j'ai pu confectionner une
+                signalétique pour les arbres. On retrouve sur les panneaux, le nom français suivi du nom latin.</p>
+        </div>
+
+        <div class="mt-150 bg-ombre">
+            <div class="blocs">
+                <div>
+                    <img src="img/logo-pcaet.png" alt="logo">
+                </div>
+                <div>
+                    <img src="img/multiple.png" alt="magazine multiple">
+                </div>
+            </div>
+            <p>L'une de mes premières mission à la mairie de Dardilly a été de réfléchir à la création d’un logo pour le
+                Plan Climat Air Energie Territorial. Après plusieurs versions, la version ci-dessus a été retenu. Le
+                logo est utilisé dans le magazine
+                municipal afin d’identifier les articles et images en lien avec ce plan territorial.</p>
+        </div>
+
+        <h2 class="mt-150">Autres projets</h2>
+
+        <div class="blocs">
+
+            <div class="bloc3">
+                <a href="#div_cacher_halloween" id="afficher_halloween" onclick="show('div_cacher_halloween');"><img
+                        src="img/mockup-halloween.png" alt="carte halloween">
+                    <p>Carte d'halloween</p>
+                </a>
+            </div>
+
+            <div class="bloc3">
+                <a href="#div_cacher_mdf" id="afficher_mdf" onclick="show('div_cacher_mdf');"><img
+                        src="img/logo-mdf.png" alt="logo My Digital Food">
+                    <p>Logo My Digital Food</p>
+                </a>
+            </div>
+
+            <div class="bloc3">
+                <a href="#div_cacher_streetart" id="afficher_streetart" onclick="show('div_cacher_streetart');"><img
+                        src="img/street-art.png" alt="street art">
+                    <p>Street-Art</p>
+                </a>
+            </div>
+        </div>
+
+        <!--Div cacher halloween -->
+        <div id="div_cacher_halloween">
+            <img class="triangle" id="triangle-halloween" src="img/triangle.png" alt="triangle">
+            <div class="blocs div_cacher text-left">
+                <div class="bloc2">
+                    <h3 class="font-regular">Carte d'halloween</h3>
+                    <h4 class="font-regular">Logiciels utilisés :</h4>
+                    <div class="blocs content-left">
+                        <img class="mr-20" src="img/illustrator.png" alt="logo">
+                        <img src="img/photoshop.png" alt="logo">
+                    </div>
+                    <p>Réalisation d’une carte d’halloween. La découpe de la tête a été travaillée sur
+                        Photoshop.
+                        Les formes ajoutées ont été faites à l’aide d’Illustrator. Le verso de la carte est
+                        entièrement
+                        réalisé
+                        sur Illustrator.</p>
+                </div>
+                <div class="bloc2">
+                    <img src="img/halloween.png" alt="halloween">
+                </div>
+            </div>
+        </div>
+
+        <!--Div cacher logo mdf-->
+        <div id="div_cacher_mdf">
+            <img class="triangle" id="triangle-mdf" src="img/triangle.png" alt="triangle">
+            <div class="blocs div_cacher text-left">
+                <div class="bloc2">
+                    <h3 class="font-regular">Logo My Digital Food</h3>
+                    <h4 class="font-regular">Logiciel utilisé :</h4>
+                    <div class="blocs content-left">
+                        <img src="img/illustrator.png" alt="logo">
+                    </div>
+                    <p>Logo réalisé pour le projet My Digital Food. Il reprend les mêmes codes que le logo My Digital School. Un hamburger remplace le
+                        cerveau, et le jaune remplace le bleu. Une landing page a été produite lors de ce projet. Vous pouvez la retrouvée en cliquant <a href="developpement.html#landing-page-mdf">ici.</a></p>
+                </div>
+                <div class="bloc2">
+                    <img src="img/logo-mdf.png" alt="logo My Digital Food">
+                </div>
+            </div>
+        </div>
+
+        <!--Div cacher street art-->
+        <div id="div_cacher_streetart">
+            <img class="triangle" id="triangle-streetart" src="img/triangle.png" alt="triangle">
+            <div class="blocs div_cacher text-left">
+                <div class="bloc2">
+                    <h3 class="font-regular">Street-Art</h3>
+                    <h4 class="font-regular">Logiciels utilisés :</h4>
+                    <div class="blocs content-left">
+                        <img class="mr-20" src="img/illustrator.png" alt="logo">
+                        <img src="img/photoshop.png" alt="logo">
+                    </div>
+                    <p>Street Art fictif ou sur papier, réalisés avec des collages ou bien 100% digital. Ce projet avait
+                        pour objectif de travailler sa créativité en alliant les outils dits plus traditionnels ainsi que les
+                        outils digitaux.</p>
+                </div>
+                <div class="bloc2">
+                    <img src="img/sticker-street-art.png" alt="sticker street-art">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-bandeau">
+        <div id="bandeau">
+            <img class="logo mr-5" src="img/at.png" alt="mail">
+            <p class="mr-20">oriane.tourneroche@gmail.com</p>
+
+            <img class="logo mr-5" src="img/github.png" alt="github">
+            <p class="mr-20">orianetrn</p>
+
+            <img class="logo mr-5" src="img/linkedin.png" alt="linkedin">
+            <p class="mr-20">Oriane Tourneroche</p>
+
+            <img class="logo mr-5" src="img/instagram.png" alt="instagram">
+            <p class="mr-20">designoriane</p>
+
+            <div class="bandeau-cacher">
+                <img class="logo mr-5" src="img/at.png" alt="mail">
+                <p class="mr-20">oriane.tourneroche@gmail.com</p>
+
+                <img class="logo mr-5" src="img/github.png" alt="github">
+                <p class="mr-20">orianetrn</p>
+
+                <img class="logo mr-5" src="img/linkedin.png" alt="linkedin">
+                <p class="mr-20">Oriane Tourneroche</p>
+
+                <img class="logo mr-5" src="img/instagram.png" alt="instagram">
+                <p>designoriane</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2 class="title-center">Oriane Tourneroche © 2022</h2>
+    </footer>
+
+    <script src="afficher-div.js"></script>
+    <script src="menu-burger.js"></script>
+
+</body>
+
+</html>

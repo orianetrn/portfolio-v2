@@ -1,0 +1,48 @@
+.container-projet {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Div cacher */ 
+
+.div_cacher {
+    background-color: $blue-light;
+}
+
+#div_cacher_arbre {
+    display: none;
+}
+
+#div_cacher_mdf {
+    display: none;
+}
+
+#div_cacher_streetart {
+    display: none;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.content-left {
+    justify-content: left;
+}
+
+.triangle {
+    margin: 0;
+    margin-bottom: -10px;
+
+    @include mobile-only {
+        width: 15%;
+    }
+}
+
+#triangle-halloween {
+    margin-left: -67%;
+}
+
+#triangle-streetart {
+    margin-right: -67%;
+}
